@@ -3,7 +3,7 @@ import requests as req
 import json
 
 
-url = 'google.com'
+url = input("Enter domain name: ")
 ip = socket.gethostbyname(url)
 req = req.get(f'https://ipinfo.io/{ip}/json')
 data = json.loads(req.text)
